@@ -1,0 +1,24 @@
+1. Crawl directories and print file paths
+2. Profile bottlenecks
+3. Maybe try Async?
+
+
+----
+
+
+SPEC:
+
+$ oak
+
+.gitattributes
+.gitignore
+Makefile
+PLAN
+README.md
+_build/.aliases/...
+_build/.db
+_build/...
+src/bin/Main.re
+src/bin/dune
+src/oak/dune
+...

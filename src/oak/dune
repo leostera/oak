@@ -1,3 +1,4 @@
 (library
   (name oak)
-  (libraries bos logs))
+  (libraries lwt lwt.unix unix))
+  
