@@ -1,0 +1,3 @@
+(library
+  (name oak)
+  (libraries bos logs))

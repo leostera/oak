@@ -1,0 +1,20 @@
+opam-version: "2.0"
+name: "oak"
+version: "0.1"
+synopsis: "A GNU Tree Clone"
+maintainer: "Leandro Ostera <leandro@ostera.io>"
+authors: "Leandro Ostera <leandro@ostera.io>"
+license: "MIT"
+homepage: "https//github.com/ostera/oak"
+bug-reports: "https//github.com/ostera/oak/issues"
+depends: [
+  "bos"
+  "logs"
+  "nproc"
+  "lwt"
+
+  "dune" {build}
+  "reason" {build}
+]
+build: [make "build"]
+install: [make "install"]

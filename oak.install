@@ -1,0 +1,7 @@
+lib: [
+  "_build/install/default/lib/oak/META" {"META"}
+  "_build/install/default/lib/oak/opam" {"opam"}
+]
+bin: [
+  "_build/install/default/bin/oak" {"oak"}
+]
