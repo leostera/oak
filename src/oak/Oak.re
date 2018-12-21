@@ -3,14 +3,18 @@ module File = {
 
   let tag = path =>
     Unix.(
-      path
-      |> Lwt_unix.stat
-      >|= (
-        stat =>
-          switch (stat.st_kind) {
-          | S_DIR => `Dir(path)
-          | _ => `File(path)
-          }
+      Lwt.catch(
+        () =>
+          path
+          |> Lwt_unix.stat
+          >|= (
+            stat =>
+              switch (stat.st_kind) {
+              | S_DIR => `Dir(path)
+              | _ => `File(path)
+              }
+          ),
+        _ex => Lwt.return(`File(path)),
       )
     );
 
