@@ -1,7 +1,7 @@
 opam-version: "2.0"
 name: "oak"
 version: "0.1"
-synopsis: "A GNU Tree Clone"
+synopsis: "A Tree Clone"
 maintainer: "Leandro Ostera <leandro@ostera.io>"
 authors: "Leandro Ostera <leandro@ostera.io>"
 license: "MIT"
@@ -15,6 +15,7 @@ depends: [
 
   "dune" {build}
   "reason" {build}
+  "landmarks"
 ]
 build: [make "build"]
 install: [make "install"]

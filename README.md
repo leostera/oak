@@ -1,3 +1,3 @@
 # Oak 🌳
 
-A minimalistic GNU Tree-like tool built in Reason Native.
+A minimalistic Tree-like tool built in Reason Native.

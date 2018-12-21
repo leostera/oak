@@ -1,5 +1,3 @@
-CACTUS=./_build/install/default/bin/cactus
-
 .PHONY: deps
 deps:
 	opam install --deps-only .
@@ -15,10 +13,6 @@ build:
 .PHONY: watch
 watch:
 	dune build --watch
-
-.PHONY: docs
-docs: build
-	$(CACTUS) build --debug --output-dir=docs
 
 .PHONY: fmt
 fmt:
