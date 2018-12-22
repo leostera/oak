@@ -12,9 +12,9 @@ module File = {
         |> List.map(Filename.concat(dir))
         |> List.partition(Sys.is_directory);
 
-      let this_level = [files, dir, ...dirs];
+      let this_level = [files, [dir], dirs] |> List.concat;
 
-      let next_level = dirs |> List.map(find_all);
+      let next_level = dirs |> List.map(find_all) |> List.concat;
 
       [this_level, next_level] |> List.concat;
     };
