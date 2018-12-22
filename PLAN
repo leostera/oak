@@ -1,0 +1,25 @@
+Cmdliner by @dbuenzli
+
+Add flags:
+
+✅ --vverbosity and --debug
+  To be able to show a lot more output and diagnose what's going on with it
+
+✅ -help : to see how to use the tool
+
+* --level N : to limit the listing to N levels
+
+* --use-gitignore : should ignore stuff in .gitignore and .git folder
+
+  If you pass it in, and there is no .gitignore: do we fail?
+
+  If we find one, we should ignore:
+    .git — done, we ignore everything in it
+    .gitignore
+    anything listed in .gitignore
+
+❌ --color : to show different colors for different file types
+
+✅ a path from where to start!
+
+Completely sync and blocking.

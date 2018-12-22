@@ -1,4 +1,4 @@
 (executable
   (name Main)
   (public_name oak)
-  (libraries oak))
+  (libraries oak cmdliner logs logs.cli logs.fmt fmt fmt.tty fmt.cli))

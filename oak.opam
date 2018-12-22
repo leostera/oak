@@ -10,6 +10,7 @@ bug-reports: "https//github.com/ostera/oak/issues"
 depends: [
   "bos"
   "logs"
+  "cmdliner"
   "nproc"
   "lwt"
 
